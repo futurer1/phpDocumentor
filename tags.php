@@ -10,8 +10,7 @@ URL: https://phpdoc.org/docs/
 @deprecated - тег для пометки элементов на удаление в будущих версиях. 
               Можно использовать вместе с тегом @see, чтобы указать на новый элемент, 
               который будет использован вместо устаревшего.
-
-@deprecated [<version>] [<description>]
+              @deprecated [<version>] [<description>]
 
 @example - пример использования метода или класса
 @filesource - сообщает в phpDocumentor, что нужно включить исходный код в текущий файл для разбора
@@ -45,7 +44,13 @@ class Parent
 * @method setString(integer $integer)
 */
 
-//  @package
+//  @package - используется для классификации структурных элементов в логических подразделениях
+//             @package [level 1]\[level 2]\[etc.]
+
+/**
+* @package PSR\Documentation\API
+*/
+
 //  @param
 //  @property
 //  @property-read
