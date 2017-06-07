@@ -29,21 +29,35 @@ URL: https://phpdoc.org/docs/
  {
      <...>
  }
-/*
-@method
-@package
-@param
-@property
-@property-read
-@property-write
-@return
-@see
-@since
-@source
-@subpackage
-@throws
-@todo
-@uses
-@var
-@version
+
+//  @method - используется для описания методов, которые могут быть вызваны магической функцией __call внутри класса
+class Parent
+{
+    public function __call()
+    {
+    //<...>
+    }
+}
+
+/**
+* @method string getString()
+* @method void setInteger(integer $integer)
+* @method setString(integer $integer)
 */
+
+//  @package
+//  @param
+//  @property
+//  @property-read
+//  @property-write
+//  @return
+//  @see
+//  @since
+//  @source
+//  @subpackage
+//  @throws
+//  @todo
+//  @uses
+//  @var
+//  @version
+
