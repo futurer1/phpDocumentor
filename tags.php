@@ -123,7 +123,18 @@ class Child extends Parent
 //<...>
 }
 
-//  @return
+//  @return - описывает возвращаемое значение функцией или методом
+//            @return [Type] [<description>]
+
+/**
+* @return string|null The label's text or null if none provided.
+*/
+function getLabel()
+{
+//<...>
+}
+
+
 //  @see
 //  @since
 //  @source
