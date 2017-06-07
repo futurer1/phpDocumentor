@@ -87,9 +87,11 @@ class Parent
  }
 
 //  @property-read - указывает какие можно использовать магические свойства, только для чтения
+//                   @property-read [Type] [name] [<description>]
 
+//  @property-write - указывает какие можно использовать магические свойства, только для записи
+//                    @property-write [Type] [name] [<description>]
 
-//  @property-write
 //  @return
 //  @see
 //  @since
