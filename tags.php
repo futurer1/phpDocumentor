@@ -86,7 +86,9 @@ class Parent
  //<...>
  }
 
-//  @property-read
+//  @property-read - указывает какие можно использовать магические свойства, только для чтения
+
+
 //  @property-write
 //  @return
 //  @see
