@@ -88,6 +88,22 @@ class Parent
 
 //  @property-read - указывает какие можно использовать магические свойства, только для чтения
 //                   @property-read [Type] [name] [<description>]
+class Parent
+{
+    public function __get()
+    {
+    //<...>
+    }
+}
+
+/**
+* @property-read string $myProperty
+*/
+class Child extends Parent
+{
+//<...>
+}
+
 
 //  @property-write - указывает какие можно использовать магические свойства, только для записи
 //                    @property-write [Type] [name] [<description>]
