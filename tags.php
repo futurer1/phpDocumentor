@@ -26,7 +26,7 @@ URL: https://phpdoc.org/docs/
 */
  function count()
  {
-     <...>
+ //<...>
  }
 
 //  @method - используется для описания методов, которые могут быть вызваны магической функцией __call внутри класса
@@ -64,7 +64,7 @@ class Parent
 */
  function count(array $items)
  {
-     <...>
+ //<...>
  }
 
 
@@ -91,6 +91,21 @@ class Parent
 
 //  @property-write - указывает какие можно использовать магические свойства, только для записи
 //                    @property-write [Type] [name] [<description>]
+class Parent
+{
+    public function __set()
+    {
+    //<...>
+    }
+}
+
+/**
+* @property-write string $myProperty
+*/
+class Child extends Parent
+{
+//<...>
+}
 
 //  @return
 //  @see
