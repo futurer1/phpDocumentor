@@ -15,11 +15,21 @@ URL: https://phpdoc.org/docs/
 
 @example - пример использования метода или класса
 @filesource - сообщает в phpDocumentor, что нужно включить исходный код в текущий файл для разбора
-@global
-@ignore
-@internal
-@license
-@link
+
+@ignore - сообщает в phpDocumentor, что следующий структурный элемент обрабатывать не надо
+@internal - отмечает, чтоэлемент документации с этим тегом предназначен для внутреннего испеользования
+@license - описывает соответствие лицензии
+*/
+//  @link - связывает структурный элемент с сайтом. Должен задаваться абсотютным URI
+
+/**
+* @link http://example.com/my/bar Documentation of Foo.
+*/
+ function count()
+ {
+     <...>
+ }
+/*
 @method
 @package
 @param
