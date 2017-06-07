@@ -51,10 +51,41 @@ class Parent
 * @package PSR\Documentation\API
 */
 
+
 //  @param - используется для документирования одиночного аргумента функции или метода
 //           @param [Type] [name] [<description>]
 
-//  @property
+/**
+* Counts the number of items in the provided array.
+*
+* @param mixed[] $items Array structure to count the elements of.
+*
+* @return int Returns the number of elements.
+*/
+ function count(array $items)
+ {
+     <...>
+ }
+
+
+//  @property - позволяет узнать классу какие магические свойства в нём присутствуют
+//              @property [Type] [name] [<description>]
+
+class Parent
+{
+    public function __get()
+    {
+    //<...>
+    }
+}
+ /**
+  * @property string $myProperty
+  */
+ class Child extends Parent
+ {
+ //<...>
+ }
+
 //  @property-read
 //  @property-write
 //  @return
