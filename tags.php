@@ -51,7 +51,9 @@ class Parent
 * @package PSR\Documentation\API
 */
 
-//  @param
+//  @param - используется для документирования одиночного аргумента функции или метода
+//           @param [Type] [name] [<description>]
+
 //  @property
 //  @property-read
 //  @property-write
