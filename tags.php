@@ -151,7 +151,31 @@ function count()
 }
 
 
-//  @since - 
+//  @since - пока не полностью поддерживается в PhpDocumentor2.
+//           Говорит о том с какой версией ассоциирован структурный элемент.
+//           @since [version] [<description>]
+/**
+* @since 1.0.1 First time this was introduced.
+*
+* @return integer Indicates the number of items.
+*/
+function count()
+{
+//<...>
+}
+
+/**
+* @since 1.0.2 Added the $b argument.
+* @since 1.0.1 Added the $a argument.
+* @since 1.0.0
+*
+* @return void
+*/
+function dump($a, $b)
+{
+//<...>
+}
+
 //  @source
 //  @subpackage
 //  @throws
