@@ -135,8 +135,23 @@ function getLabel()
 }
 
 
-//  @see
-//  @since
+//  @see - показывает ссылкус ассоциированного структурного элемента на web-сайт или другой структурный элемент
+//         @see [URI | FQSEN] [<description>]
+
+/**
+* @see http://example.com/my/bar Documentation of Foo.
+* @see MyClass::$items           For the property whose items are counted.
+* @see MyClass::setItems()       To set the items for this collection.
+*
+* @return integer Indicates the number of items.
+*/
+function count()
+{
+//<...>
+}
+
+
+//  @since - 
 //  @source
 //  @subpackage
 //  @throws
