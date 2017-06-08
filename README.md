@@ -1,3 +1,4 @@
+![phpDocumentor](https://phpdoc.org/bundles/phpdocumentorwebsite/images/logo-icon.png) 
 # phpDocumentor
 Documenting code with phpDocumentor
 
