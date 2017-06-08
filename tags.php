@@ -1,6 +1,15 @@
 <?php
 // URL: https://phpdoc.org/docs/
-
+/* Наиболее интересные теги:
+    @author;
+    @deprecated;
+    @var;
+    @version;
+    @todo;
+    @return;
+    @package;
+    @param.
+*/
 
 // @api - помечает структурный элемент, используемый сторонними программами, и являющийся частью API.
 
@@ -275,13 +284,63 @@ function count($items)
 }
 
 
-//  @todo - 
+//  @todo - маркерует структурный элемент, обозначая задачи, которые необходимо выполнить в дубущем
+//          @todo [description]
+//          Пример:
+/**
+* Counts the number of items in the provided array.
+*
+* @todo add an array parameter to count
+*
+* @return int Returns the number of elements.
+*/
+function count()
+{
+//<...>
+}
 
 
-//  @uses - 
+//  @uses - показывает ссылку "с" и "на" ассоциированный структурный элемент.
+//          Отношения между текущим элементов и другим.
+//          @uses [FQSEN] [<description>]
+//          Пример:
+/**
+* @uses MyClass::$items to retrieve the count from.
+*
+* @return integer Indicates the number of items.
+*/
+function count()
+{
+//<...>
+}
 
 
-//  @var - 
+//  @var - указывает описание для свойств класса
+//         @var [“Type”] [$element_name] [<description>]
+//         Пример:
+class Foo
+{
+/**
+* @var string $name        Should contain a description
+* @var string $description Should contain a description
+*/
+    protected $name, $description;
+}
 
-
-//  @version - 
+//  @version - версия документа
+//             @version [<vector>] [<description>]
+//             Пример:
+/**
+* @version 1.0.1
+*/
+class Counter
+{
+//<...>
+}
+/**
+* @version GIT: $Id$ In development. Very unstable.
+*/
+class NeoCounter
+{
+//<...>
+}
