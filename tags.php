@@ -190,10 +190,41 @@ function count()
     }
 }
 
-//  @subpackage
-//  @throws
+
+//  @subpackage - используется для категоризации структурного элемента в логическом подразделении основного пакета
+//                может быть использован как аналог или дополнение к пространству имен
+//                пространства имет позволяют функционально разделить структурные элементы, а тег @subpackage логически, показывая 
+//                каким образом могут быть сгруппированы элементы с различной иерархией
+//                Лучше всего использовать этот тег так же как и @package
+//                Структурный элемент, описанный тегом @subpackage отображается phpDocumentor сгруппированым в отдельную секцию
+//                @subpackage [name]
+
+/**
+* @package PSR
+* @subpackage Documentation\API
+*/
+
+
+//  @throws - показывает какие исключения (ошибки) может сформировать структурный элемент
+//            Используется чтобы показать в документации какие ошибки могут возникать и при каких обстоятельствах.
+
+/**
+* Counts the number of items in the provided array.
+*
+* @param mixed[] $array Array structure to count the elements of.
+*
+* @throws InvalidArgumentException if the provided argument is not of type
+*     'array'.
+*
+* @return int Returns the number of elements.
+*/
+function count($items)
+{
+//<...>
+}
+
+
 //  @todo
 //  @uses
 //  @var
 //  @version
-
