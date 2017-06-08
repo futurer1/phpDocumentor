@@ -176,7 +176,20 @@ function dump($a, $b)
 //<...>
 }
 
-//  @source
+//  @source - пока не полностью поддерживается в PhpDocumentor2.
+//            Может быть использован для сообщения о конкретной реализации кода структурного элемента, который его представляет.
+//            @source [<start-line> [<number-of-lines>] ] [<description>]
+
+/**
+* @source 2 1 Check that ensures lazy counting.
+*/
+function count()
+{
+    if (null === $this->count) {
+    //<...>
+    }
+}
+
 //  @subpackage
 //  @throws
 //  @todo
