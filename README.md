@@ -6,7 +6,7 @@ Documenting code with phpDocumentor
 [@package](https://phpdoc.org/docs/latest/references/phpdoc/tags/package.html) [_название пакета_]
 + Можно задать вверху файла для всего файла сразу, а можно индивидуально для каждого класса
 
-[@author](https://phpdoc.org/docs/latest/references/phpdoc/tags/author.html) [_имя автора кода_]
+[@author](/author.md) [_имя автора кода_]
 + Так же можно задать как для файла, так и для структурного элемента кода
 
 [@version](https://phpdoc.org/docs/latest/references/phpdoc/tags/version.html) [_номер версии документа_] [_описание версии_]
