@@ -1,5 +1,4 @@
-![phpDocumentor](https://phpdoc.org/bundles/phpdocumentorwebsite/images/logo-icon.png) 
-# phpDocumentor
+# phpDocumentor [![phpDocumentor](https://phpdoc.org/bundles/phpdocumentorwebsite/images/logo-icon.png)](https://phpdoc.org/docs/latest/index.html) 
 Documenting code with phpDocumentor
 
 ## Наиболее часто применяемые теги:
