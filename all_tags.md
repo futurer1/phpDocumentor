@@ -1,7 +1,7 @@
 # Tags
 [see moreinfo](https://phpdoc.org/docs/latest/internals/tags.html)
 
-[@since](#\@since)
+[@since](#since)
 
 ## @api
 Помечает структурный элемент, используемый сторонними программами, и являющийся частью API.
