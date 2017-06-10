@@ -1,7 +1,7 @@
 # Tags
 [see moreinfo](https://phpdoc.org/docs/latest/internals/tags.html)
 
-[@since](#since)
+[@since](#\@since)
 
 ## @api
 Помечает структурный элемент, используемый сторонними программами, и являющийся частью API.
@@ -251,7 +251,7 @@ function count()
 }
 ```
 
-## since
+## @since
 Пока не полностью поддерживается в PhpDocumentor2.
 Говорит о том с какой версией ассоциирован структурный элемент.
 
