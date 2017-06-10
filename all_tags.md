@@ -452,4 +452,4 @@ class NeoCounter
 //<...>
 }
 ```
-[:arrow_up:Наверх](#Tags)
+[:arrow_up: Наверх](#tags)
