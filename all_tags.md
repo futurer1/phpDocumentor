@@ -1,27 +1,53 @@
 # Tags
-[see moreinfo](https://phpdoc.org/docs/latest/internals/tags.html)
 
-[@since](#since)
++ [\@api](#api)
++ [\@author](#author)
++ [\@category](#category)
++ [\@copyright](#copyright)
++ [\@deprecated](#deprecated)
++ [\@example](#example)
++ [\@filesource](#filesource)
++ [\@ignore](#ignore)
++ [\@internal](#internal)
++ [\@license](#license)
++ [\@link](#link)
++ [\@method](#method)
++ [\@package](#package)
++ [\@property](#property)
++ [\@property-read](#property-read)
++ [\@property-write](#property-write)
++ [\@return](#return)
++ [\@see](#see)
++ [\@since](#since)
++ [\@source](#source)
++ [\@subpackage](#subpackage)
++ [\@throws](#throws)
++ [\@todo](#todo)
++ [\@uses](#uses)
++ [\@var](#var)
++ [\@version](#version)
 
-## @api
+    [see moreinfo](https://phpdoc.org/docs/latest/internals/tags.html)
+
+## \@api
 Помечает структурный элемент, используемый сторонними программами, и являющийся частью API.
 
-## @author
+## \@author
 Имя автора
 
 `@author [name] [<email address>]`
 
-## @category
+## \@category
 Тег не должен быть использован, вместо него нужно использовать @package
 
 `@category [description]`
 
-## @copyright
+## \@copyright
 Копирайтинг
 
 `@copyright [description]`
 
-## @deprecated
+## \@deprecated
 Тег для пометки элементов на удаление в будущих версиях. 
 Можно использовать вместе с тегом @see, чтобы указать на новый элемент, который будет использован вместо устаревшего.
 
@@ -41,7 +67,7 @@ function count()
 }
 ```
 
-## @example
+## \@example
 Пример использования метода или класса
 
 `@example [location] [<start-line> [<number-of-lines>] ] [<description>]`
@@ -59,25 +85,25 @@ function count()
 }
 ```
 
-## @filesource
+## \@filesource
 Сообщает в phpDocumentor, что нужно включить исходный код в текущий файл для разбора.
 
-## @ignore
+## \@ignore
 Сообщает в phpDocumentor, что следующий структурный элемент обрабатывать не надо.
 
 `@ignore [<description>]`
 
-## @internal
+## \@internal
 Отмечает, что элемент документации с этим тегом предназначен для внутреннего использования.
 
 `@internal [description]`
   
-## @license
+## \@license
 Описывает соответствие лицензии.
 
 `@license [<url>] [name]`
   
-## @link
+## \@link
 Связывает структурный элемент с сайтом. Должен задаваться абсотютным URI
 Ссылка на внешний ресурс, например, на документацию php.net
 
@@ -94,7 +120,7 @@ function count()
 }
 ```
 
-## @method
+## \@method
 Используется для описания методов, которые могут быть вызваны магической функцией `__call()` внутри класса.
 
 `@method [return type] [name]([[type] [parameter]<, ...>]) [<description>]`
@@ -115,7 +141,7 @@ class Parent
 */
 ```
 
-## @package
+## \@package
 Используется для классификации структурных элементов в логических подразделениях.
 С помощью этого тега можно связывать классы с пакетами.
 Может быть использован для документирования файла, а не класса (вверху до всего кода).
@@ -143,7 +169,7 @@ function count(array $items)
 }
 ```
 
-## @property
+## \@property
 Позволяет узнать классу какие магические свойства в нём присутствуют.
 
 `@property [Type] [name] [<description>]`
@@ -166,7 +192,7 @@ class Child extends Parent
 }
 ```
 
-## @property-read
+## \@property-read
 Указывает какие можно использовать магические свойства, только для чтения.
 
 `@property-read [Type] [name] [<description>]`
@@ -190,7 +216,7 @@ class Child extends Parent
 }
 ```
 
-## @property-write
+## \@property-write
 Указывает какие можно использовать магические свойства, только для записи.
 
 `@property-write [Type] [name] [<description>]`
@@ -214,7 +240,7 @@ class Child extends Parent
 }
 ```
 
-## @return
+## \@return
 Описывает возвращаемое значение функцией или методом (его тип и назначение).
 С помощью символа | можно указать несколько типов возвращаемых значений.
 
@@ -231,7 +257,7 @@ function getLabel()
 }
 ```
 
-## @see
+## \@see
 Показывает ссылкус ассоциированного структурного элемента на web-сайт или другой структурный элемент.
 
 `@see [URI | FQSEN] [<description>]`
@@ -282,7 +308,7 @@ function dump($a, $b)
 }
 ```
 
-## @source
+## \@source
 Пока не полностью поддерживается в PhpDocumentor2.
 Может быть использован для сообщения о конкретной реализации кода структурного элемента, который его представляет.
 
@@ -301,7 +327,7 @@ function count()
 }
 ```
 
-## @subpackage
+## \@subpackage
 Используется для категоризации структурного элемента в логическом подразделении основного пакета.
 Может быть использован как аналог или дополнение к пространству имен.
 Пространства имет позволяют функционально разделить структурные элементы, а тег `@subpackage` логически, показывая каким образом могут быть сгруппированы элементы с различной иерархией.
@@ -318,7 +344,7 @@ function count()
 */
 ```
 
-## @throws
+## \@throws
 Показывает какие исключения (ошибки) может сформировать структурный элемент.
 Используется чтобы показать в документации какие ошибки могут возникать и при каких обстоятельствах.
 
@@ -340,7 +366,7 @@ function count($items)
 }
 ```
 
-## @todo
+## \@todo
 Маркерует структурный элемент, обозначая задачи, которые необходимо выполнить в дубущем.
 
 `@todo [description]`
@@ -360,7 +386,7 @@ function count()
 }
 ```
 
-## @uses
+## \@uses
 Показывает ссылку "с" и "на" ассоциированный структурный элемент.
 Автоматически создает двухстороннюю ссылку между элементами, что очень удобно.
 Отношения между текущим элементов и тем, на который ссылка.
@@ -380,7 +406,7 @@ function count()
 }
 ```
 
-## @var
+## \@var
 Указывает описание для свойств класса.
 
 `@var [“Type”] [$element_name] [<description>]`
@@ -404,7 +430,7 @@ class Foo
 }
 ```
 
-## @version
+## \@version
 Версия документа.
 
 `@version [<vector>] [<description>]`
@@ -426,3 +452,4 @@ class NeoCounter
 //<...>
 }
 ```
+[:arrow_up:Наверх](#Tags)
