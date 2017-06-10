@@ -337,9 +337,13 @@ function count($items)
 }
 ```
 
-//  @todo - маркерует структурный элемент, обозначая задачи, которые необходимо выполнить в дубущем
-//          @todo [description]
-//          Пример:
+## @todo
+Маркерует структурный элемент, обозначая задачи, которые необходимо выполнить в дубущем.
+
+`@todo [description]`
+
+Пример:
+```php
 /**
 * Counts the number of items in the provided array.
 *
@@ -351,11 +355,17 @@ function count()
 {
 //<...>
 }
-//  @uses - показывает ссылку "с" и "на" ассоциированный структурный элемент.
-//          Автоматически создает двухстороннюю ссылку между элементами, что очень удобно.
-//          Отношения между текущим элементов и тем, на который ссылка.
-//          @uses [FQSEN] [<description>]
-//          Пример:
+```
+
+## @uses
+Показывает ссылку "с" и "на" ассоциированный структурный элемент.
+Автоматически создает двухстороннюю ссылку между элементами, что очень удобно.
+Отношения между текущим элементов и тем, на который ссылка.
+
+`@uses [FQSEN] [<description>]`
+
+Пример:
+```php
 /**
 * @uses MyClass::$items to retrieve the count from.
 *
@@ -365,15 +375,22 @@ function count()
 {
 //<...>
 }
-//  @var - указывает описание для свойств класса
-//         @var [“Type”] [$element_name] [<description>]
-//         Пример:
+```
+
+## @var
+Указывает описание для свойств класса.
+
+`@var [“Type”] [$element_name] [<description>]`
+
+Пример:
+```php
 class Foo
 {
 /**
 * @var string $name        Should contain a description
 * @var string $description Should contain a description
 */
+
     protected $name, $description;
 /**
 * Содержит параметры в виде строки
@@ -382,7 +399,10 @@ class Foo
 */
     public $params;
 }
-//  @version - версия документа
+```
+
+## @version
+Версия документа.
 //             @version [<vector>] [<description>]
 //             Пример:
 /**
