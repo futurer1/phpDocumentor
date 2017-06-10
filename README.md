@@ -1,5 +1,5 @@
 # phpDocumentor [![phpDocumentor](https://phpdoc.org/bundles/phpdocumentorwebsite/images/logo-icon.png)](https://phpdoc.org/docs/latest/index.html) 
-Documenting code with phpDocumentor
+Documenting code with phpDocumentor. ([all tags](/all_tags.md))
 
 ## Наиболее часто применяемые теги:
 
