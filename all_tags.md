@@ -80,7 +80,7 @@ function count()
 [:arrow_up: Наверх](#tags)
 
 ## \@example
-Пример использования метода или класса
+Пример использования метода или класса.
 
 `@example [location] [<start-line> [<number-of-lines>] ] [<description>]`
 
